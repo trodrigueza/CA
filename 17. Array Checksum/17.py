@@ -9,7 +9,6 @@ for i in data:
 # checksum algorithm
 result = 0
 k = 0
-print(o_data[1][k])
 
 while k < o_data[0][0]:
     result = (result + o_data[1][k]) * 113
