@@ -1,14 +1,6 @@
 # vowel count
 
-inputData = list(open("inputData9.txt"))
-# print(''.join(inputData))
-# inputDataStr = []
-
-# for string in inputData:
-#     new_string = string.replace('\n','')
-#     inputDataStr.append(new_string)
-
-# print(inputDataStr)
+inputData = list(open("20. Vowel Count/data.txt"))
 total = []
 
 for string in inputData[1:]:
