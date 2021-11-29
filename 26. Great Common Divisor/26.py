@@ -1,4 +1,4 @@
-data =  open('26. Great Common Divisor/data.txt')
+data = open('26. Great Common Divisor/data.txt')
 
 #ordering data
 odata = []
@@ -11,15 +11,16 @@ ans = []
 k = 1
 for i in range(odata[0][0]):
     x1, x2 = odata[k][0], odata[k][1]
-    r = abs(x1-x2)
-    while x1 % r != 0 or x2 % r != 0:
-        if x1 > x2:
-            r = abs(x2 - r)
-        else:
-            r = abs(x1 - r)
+    if x1 > x2:
+        r = x2
+    else:
+        r = x1
+    for i in range(1, r+1):
+        if x1 % i == 0 and x2 % i == 0:
+            gcd = i
     #LCM
-    l = int((x1 * x2) / r)
-    ans.append(f'({r} {l})')
+    lcm = int((x1 * x2) / gcd)
+    ans.append(f'({gcd} {lcm})')
     k += 1
 
 print(*ans)
