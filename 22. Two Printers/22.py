@@ -1,4 +1,3 @@
-from math import gcd
 data = open('22. Two Printers/data.txt')
 
 #ordering data
@@ -14,7 +13,7 @@ for i in range(o_data[0][0]):
     counter, l, j = 0, 0, 0
     print(ans)
     while n > 0:
-        counter += gcd(y, x)
+        counter += 1
         if counter == x + l * x:
             n -= 1
             l += 1
