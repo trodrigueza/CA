@@ -5,14 +5,7 @@ for i in input_data:
     new_i = i.replace('\n','').split()
     ordered_data.append(new_i)
 
-seconds = []
-differences = []
-output = []
-
-k = 1
-l = 0
-t = 0
-j = 0
+seconds, differences, output, k, l, t, j = [], [], [], 1, 0, 0, 0
 
 for i in range(int(ordered_data[0][0])):
     current_data = [int(x) for x in ordered_data[k]]
