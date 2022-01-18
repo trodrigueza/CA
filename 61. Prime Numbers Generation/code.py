@@ -12,3 +12,4 @@ while len(primes) < 200001:
 
 for i in indices:
     print(primes[i - 1], end = ' ')
+    

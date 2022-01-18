@@ -11,4 +11,5 @@ for i in d[1:]:
     else:
         ans.append(float('{:.7f}'.format(a)))
 
+print(i[0], i[1], i[2], i[3], i[4], i[5])
 print(*ans)
