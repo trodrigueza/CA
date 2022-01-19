@@ -6,7 +6,7 @@ for i in id:
     n = [int(x) for x in i.replace('\n', '').split()]
     d.append(n)
 
-# passing
+# d = [[18], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]] (input data)
 c, p, s = False, 0, 0
 while c == False:
     n, t = 0, 0
