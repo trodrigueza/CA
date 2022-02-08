@@ -1,5 +1,5 @@
-ans = []
-for i in range(49001,50001):
-    ans.append(i)
-
-print(*ans)
+da = []
+for i in range(20):
+  d = int(input())
+  da.append(d)
+print(da)
